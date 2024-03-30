@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <main class="main-container">
+        <div class="content-container">
+            <!-- <h2 id="login-header">LOGIN</h2> -->
+            <form class="form">
+                <div class="input-container">
+                    <label id="label1"for="username">Username</label>
+                    <input type="text" id="username" required>
+                    <label id="label2"for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="btn-container">
+                    <button id="reset-btn" type="reset">Reset</button>
+                    <button id="login-btn" type="button">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script>
+        let username = document.querySelector('#username');
+        let password = document.querySelector('#password');
+        let form = document.querySelector('.form');
+        let loginBtn = document.querySelector('#login-btn');
+
+        loginBtn.addEventListener('click', () => {
+            // e.preventDefault();
+            let uname = username.value;
+            let pwd = password.value;
+
+            let storedName = localStorage.getItem('username');
+            let storedPwd = localStorage.getItem('password');
+
+            if(uname != storedName || pwd != storedPwd) {
+                alert('Invalid username or password!');
+            }
+            else if(uname === storedName && pwd === storedPwd) {
+                alert('Login successful!');
+                window.open("./SocialPage.html", "_self");
+            }
+        });
+    </script>
+</body>
+</html>

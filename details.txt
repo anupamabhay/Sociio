@@ -1,0 +1,9 @@
+landing/homepage -> sign up and login options
+
+sign up -> enter username and password -> click sign up -> alert success -> clicking ok on alert box opens login page (target="_self")
+
+login page -> enter username and password -> click sign in -> display a basic typical social page.
+
+social page -> getItem username -> display a welcome ${username} msg on the page.
+
+username and password -> store in localStorage -> setItem(username, input.value)
