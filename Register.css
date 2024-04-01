@@ -11,14 +11,13 @@
 }
 
 :root {
-    background: url('../Assets/NeonBg/22036.jpg') no-repeat fixed center;
+    background: url('./Assets/22036.jpg') no-repeat fixed center;
     background-size: cover;
 }
 
 .main-container {
     /* border: 3px solid royalblue; */
     background-color: rgba(10, 10, 10, 0.59);
-    /* backdrop-filter: brightness(50%); */
     width: 100vw;
     height: 100vh;
 
@@ -33,44 +32,9 @@
     width: 40vw;
     height: 40vh;
     padding: 1.5rem;
-
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* gap: 1.5rem; */
     background-color: rgba(154, 154, 154, 0.332);
     backdrop-filter: blur(7px);
 }
-
-/* .header-container {
-    border: 1px solid red;
-    border-radius: 0.5rem;
-    background: url('../Assets/NeonBg/22036.jpg') fixed no-repeat center;
-    background-size: cover;
-    color: white;
-
-    height: 100%;
-    width: 50%;
-} */
-
-/* .header {
-    border: 1px solid red;
-    border-radius: 0.5rem;
-    background-color: #0a00253e;    
-    
-    height: 100%;
-    width: 100%;
-
-    color: rgb(250, 250, 250);
-    font-size: 2.5rem;
-    font-weight: 800;
-    font-style: oblique;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
-    
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-} */
 
 .form {
     /* border: 1px solid red; */
@@ -90,7 +54,6 @@
     font-weight: 700;
     font-style: oblique;
     text-transform: uppercase;
-    /* text-align: center; */
     text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
 }
 
@@ -139,19 +102,15 @@ input[type='password'] {
     justify-content: space-between;
     gap: 1rem;
 }
-/* #dob */
 
 #contact::placeholder {
     color: #0A0025;
 }
 
 .btn-container {
-    /* border: 1px solid red; */
-    /* padding-top: 1.25rem; */
     display: flex;
     justify-content: center;
     gap: 1rem;
-    /* padding: 0 1rem; */
 }
 
 button {
@@ -160,7 +119,6 @@ button {
     background-color: #0A0025;
     padding: 0.5rem;
     width: 50%;
-    /* background-color: ; */
     text-transform: uppercase;
     font-size: 1rem;
     font-style: oblique;
@@ -169,8 +127,6 @@ button {
 }
 
 button:hover {
-    /* background: url('../Assets/NeonBg/22036.jpg') fixed no-repeat center;
-    background-size: cover; */
     background-color: white;
     backdrop-filter: blur(10px);
     box-shadow: 1px 1px 15px 2px rgba(255, 255, 255, 0.15);
